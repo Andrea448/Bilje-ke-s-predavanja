@@ -1,0 +1,208 @@
+/* Resetiranje margina i fonta */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f8f9ff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+header h1 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2b2d42;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Lekcija */
+.lesson-header {
+    background: linear-gradient(90deg, #f72585, #b5179e);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.lesson-header h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.lesson-info {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.badge {
+    background-color: white;
+    color: #b5179e;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Sekcije */
+section {
+    margin-bottom: 25px;
+}
+
+section h3 {
+    color: #222;
+    margin-bottom: 10px;
+    border-left: 4px solid #4361ee;
+    padding-left: 10px;
+}
+
+pre {
+    background-color: #1e1e2f;
+    color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}
+
+/* List */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Napomena */
+.note.warning {
+    background-color: #fff3cd;
+    border-left: 6px solid #ffc107;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Footer - Tagovi */
+footer.tags {
+    margin-top: 30px;
+}
+
+.tag {
+    background-color: #5f4bb6;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 13px;
+    display: inline-block;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9ff;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+/* Naslov */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Kartica */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+/* Zaglavlje kartice */
+.card-header {
+    background-color: lightsteelblue;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.objasnjenje{
+    background-color: lightsteelblue;
+    width: 730px;
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+}
+ul{
+    padding-left: 30px;
+}
+.span1{
+    color: mediumblue;
+    font-weight: bold;
+}
+.span2{
+     color: dodgerblue;
+     font-weight: bold;
+}
+.teze{
+    padding: 10px;
+}
+
+/* druga lekcijaaaaaa */
+.span3{
+    color: rgb(255, 131, 30);
+    font-weight: bold;
+}
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  width: 800px;
+  margin: 40px auto;
+}
+
+h2 {
+  margin-top: 0;
+  color: #222;
+}
+
+em {
+  color: #555;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+.code-box {
+  background: #2c2c2c;
+  color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-family: Consolas, monospace;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
