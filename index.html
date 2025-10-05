@@ -6,7 +6,6 @@
     <title>Bilješke s predavanja</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
     <div class="container">
         <header>
             <h1>📒 Bilješke s predavanja</h1>
@@ -65,7 +64,75 @@
             <span class="tag">Osnove</span>
         </footer>
     </div>
-</body>
+<!-- Kartica 2. lekcije -->
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>🎯 CSS box model</h2>
+                <p>Lekcija 2 • 22. rujan 2025. </p>
+            </div>
+            <h2>Block and inline boxes</h2>
+                <ul style="list-style-type: none;" class="objasnjenje">
+                    <li>- In CSS we have several types of boxes that generally fit into the categories of block boxes and inline boxes.</li>
+                    <li>- The type refers to how the box behaves in terms of page flow and in relation to other boxes on the page. </li>
+                </ul>
+            <h3>If a box has a display value of block, then:</h3>
+                <ul>
+                    <li>The box will break onto a new line.</li>
+                    <li>The <span class="span2">width</span> and <span class="span2">height</span> properties are respected.</li>
+                    <li>Padding, margin and border will cause other elements to be pushed away from the box.</li>
+                    <li>If <span class="span2">width</span> is not specified, the box will extend in the inline direction to fill the space available in its container. <br>In most cases, the box will become as wide as its container, filling up 100% of the space available.</li>
+                </ul>
+            <h3>If a box has a display type of inline, then:</h3>
+                <ul>
+                    <li>The box will not break onto a new line.</li>
+                    <li>The <span class="span2">width</span> and <span class="span2">height</span> properties will not apply.</li>
+                    <li>Top and bottom padding, margins, and borders will apply but will not cause other inline boxes to move away from the box.</li>
+                    <li>Left and right padding, margins, and borders will apply and will cause other inline boxes to move away from the box.</li>
+                </ul>
+            <h2>What is the CSS box model?</h2>
+                <ul style="list-style-type: none;" class="objasnjenje">
+                    <li>- The CSS box model as a whole applies to block boxes and defines how the different parts of a box — margin, border, padding, and content — work together to create a box that you can see on a page.</li>
+                    <li>- To add complexity, there is a standard and an alternate box model.</li>
+               </ul>
+           <h3>Parts of a box:</h3>
+                <ul>
+                    <li><b><i>Content box:</i></b> The area where your content is displayed; size it using properties like <span class="span2">width</span> and <span class="span2">height</span>.</li>
+                    <li><b><i>Padding box:</i></b> The padding sits around the content as white space; size it using <span class="span2">padding</span> and related properties.</li>
+                    <li><b><i>Border box:</i></b> The border box wraps the content and any padding; size it using <span class="span2">border</span> and related properties.</li>
+                    <li><b><i>Margin box:</i></b> The margin is the outermost layer, wrapping the content, padding, and border as whitespace between this box and other elements; size it using <span class="span2">margin</span> and related properties.</li>
+                </ul>
+            <h3>The standard CSS box model</h3>
+                <ul style="list-style-type: none;" class="objasnjenje">
+                    <li>- In the standard bopan2">height</span> property values on a box, these values define the <span class="span2">width</span> and <span class="span2">height</span> of the content box. </li>
+                    <li>- Any padding and borders are then added to those dimensions to get the total size taken up by the box.</li>
+                </ul>
+            <h3>The alternative CSS box model</h3>
+                <ul style="list-style-type: none;" class="objasnjenje">
+                    <li>- In the alternative box model, any width is the width of the visible box on the page.</li>
+                    <li>- The content area width is that width minus the width for the padding and border.</li>
+                    <li>- This is convenient as there is no need to add up the border and padding to get the real size of the box.</li>
+                    <li>- To turn on the alternative model for an element, set <span class="span2">box-sizing:</span> <span class="span3">border-box</span> in style.</li>
+                </ul>
+            <h2>Margin collapsing</h2>
+                <p>Depending on whether two elements whose margins touch have positive or negative margins, the results will be different:</p>
+                <ul>
+                    <li>Two positive margins will combine to become one margin. Its size will be equal to the largest individual margin.</li>
+                    <li>Two negative margins will collapse and the smallest (furthest from zero) value will be used.</li>
+                    <li>If one margin is negative, its value will be subtracted from the total.</li>
+                </ul>
+            <h2>Using display: inline-block</h2>
+                <ul style="list-style-type: none;" class="objasnjenje">
+                    <li>- <span class="span2">display:</span> <span class="span3">inline-block</span> is a special value of <span class="span2">display</span>, which provides a middle ground between <span class="span3">inline</span> and <span class="span3">block</span>.</li>
+                </ul>
+            <p>An element with <span class="span2">display:</span> <span class="span3">inline-block</span> does a subset of the block things we already know about:</p>
+                <ul>
+                    <li>The <span class="span2">width</span> and <span class="span2">height</span> properties are respected.</li>
+                    <li><span class="span2">Padding</span>, <span class="span2">margin</span>, and <span class="span2">border</span> will cause other elements to be pushed away from the box.</li>
+                    <li>It does not, however, break onto a new line, and will only become larger than its content if you explicitly add <span class="span2">width</span> and <span class="span2">height</span> properties.</li>
+                </ul>
+        </div>
+    </div>
 <!-- Kartica 3. lekcije -->
     <div class="container">
         <div class="card">
@@ -158,24 +225,75 @@
 
 </html>
 
-  <h2>Lekcija: CSS Opacity i Gradient</h2>
-  <p><em>Datum: 29.09.2025.</em></p>
+  <!-- Kartica 5. lekcije -->
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>🎯 Box shadows and rounded edges</h2>
+                <p>Lekcija 5 • 29. rujan 2025. </p>
+            </div>
 
-  <p>Naučili smo kako u CSS-u možemo koristiti:</p>
-  <ul>
-    <li><b>opacity</b> – određuje prozirnost elementa (0 = potpuno prozirno, 1 = potpuno vidljivo)</li>
-    <li><b>linear-gradient</b> – prelaz boja u ravnoj liniji</li>
-    <li><b>radial-gradient</b> – kružni prelaz boja</li>
-  </ul>
+            <h2>Box Shadow</h2>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- The CSS <span class="span2">box-shadow</span> property is used to apply one or more shadows to an element.</li>
+                <li>- In its simplest use, you can only specify the horizontal and the vertical offset of the shadow.</li>
+                <li>- In addition, you can add a shadow color, a spread radius, a blur effect, and change the shadow from an outer shadow to an inner shadow (inset).</li>
+            </ul>
+            <p><b>Specify a Color for the Shadow:</b></p>
+            div { <br>
+                box-shadow: 10px 10px lightblue; <br>
+            } <br>
+            <p><b>Add a Blur Effect to the Shadow:</b></p>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- The <span class="span2">blur</span> parameter defines the blur radius of the shadow. The higher the number, the more blurred the shadow will be.</li>
+            </ul>
+            div { <br>
+                box-shadow: 10px 10px 5px lightblue; <br>
+            } <br>
+            <p><b>Set the Spread Radius of the Shadow:</b></p>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- The <span class="span2">spread</span> parameter defines the spread radius of the shadow.</li>
+                <li>- A positive value increases the size of the shadow, and a negative value decreases the size of the shadow.</li>
+            </ul>
+            div { <br>
+                box-shadow: 10px 10px 5px 12px lightblue; <br>
+            } <br>
+            <p><b>Set the inset Parameter:</b></p>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- The <span class="span2">inset</span> parameter changes the shadow from an outer shadow (outset) to an inner shadow (inside an element's frame).</li>
+            </ul>
+            div { <br>
+                box-shadow: 10px 10px 5px lightblue inset; <br>
+            } <br>
+            <p><b>Add Multiple Shadows:</b></p>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- To attach more than one shadow to an element, add a comma-separated list of shadows.</li>
+            </ul>
+            div { <br>
+                box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green; <br>
+            } <br>
 
-  <div class="code-box">
-    div { <br>
-    &nbsp;&nbsp;width: 250px;<br>
-    &nbsp;&nbsp;height: 150px;<br>
-    &nbsp;&nbsp;background: linear-gradient(to right, red, yellow);<br>
-    &nbsp;&nbsp;opacity: 0.7;<br>
-    &nbsp;&nbsp;border: 2px solid black;<br>
-    &nbsp;&nbsp;margin: 15px;<br>
-    }
-  </div>
-</div>
+            <h2>Rounded Corners</h2>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- The CSS <span class="span2">border-radius</span> property is used to create rounded corners for elements.</li>
+                <li>- This property can be applied to all elements with a <span class="span2">background-color</span>, a <span class="span2">border</span>, or a <span class="span2">background-image</span>.</li>
+                <li>- In percentages border-radius for elipse can go up to 50%</li>
+            </ul>
+            <h3>CSS border-radius - Specify Each Corner</h3>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- <b>Four values - border-radius: 15px 50px 30px 5px;</b>(first value applies to top-left corner, second value applies to top-right corner, 
+                    third value applies to bottom-right corner, and fourth value applies to bottom-left corner)</li>
+                <li>- <b>Three values - border-radius: 15px 50px 30px;</b>(first value applies to top-left corner, second value applies to top-right and bottom-left corners,
+                     and third value applies to bottom-right corner)</li>
+                <li>- <b>Two values - border-radius: 15px 50px; </b>(first value applies to top-left and bottom-right corners, and the second value applies to top-right and bottom-left corners)</li>
+                <li>- <b>One value - border-radius: 15px; </b>(the value applies to all four corners, which are rounded equally)</li>
+            </ul>
+            <h2>CSS Elliptical and Circular Shapes</h2>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- To create elliptical corners, you must specify two values for each radius, separated by a slash /. <br>
+                    The first value defines the horizontal radius, and the second value defines the vertical radius.</li>
+            </ul>
+            <img src="background.png" alt="background.jpg" width="750px">
+            <img src="pattern.png" alt="pattern.png" height="500px">
+        </div>
+    </div>
