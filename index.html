@@ -297,3 +297,91 @@
             <img src="pattern.png" alt="pattern.png" height="500px">
         </div>
     </div>
+    <!-- Kartica 6. lekcije -->
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2>🎯 CSS Pozicioniranje (position)</h2>
+            <p>Lekcija 6 • 7.10.2025.</p>
+        </div>
+
+        <h2>Što je svojstvo <code>position</code>?</h2>
+        <ul class="objasnjenje" style="list-style-type: none;">
+            <li>- Svojstvo <span class="span2">position</span> određuje način pozicioniranja elementa na stranici.</li>
+            <li>- Moguće vrijednosti su: <span class="span3">static</span>, <span class="span3">relative</span>, <span class="span3">absolute</span>, <span class="span3">fixed</span> i <span class="span3">sticky</span>.</li>
+        </ul>
+
+        <h3>Static (zadano)</h3>
+        <ul>
+            <li>Element je pozicioniran u normalnom toku stranice.</li>
+            <li>Vrijednost <span class="span2">top</span>, <span class="span2">left</span>, <span class="span2">right</span>, <span class="span2">bottom</span> nema učinka.</li>
+        </ul>
+
+        <h3>Relative (relativno)</h3>
+        <ul>
+            <li>Element se pomiče relativno prema svojem početnom položaju.</li>
+            <li>Uporaba <span class="span2">top</span>, <span class="span2">left</span> i sl. uzrokovat će pomak, ali prostor u normalnom toku ostaje rezerviran.</li>
+        </ul>
+
+        <h3>Absolute (apsolutno)</h3>
+        <ul>
+            <li>Element se uklanja iz normalnog toka dokumenta.</li>
+            <li>Pozicionira se relativno prema najbližem roditelju koji ima poziciju različitu od <span class="span3">static</span>.</li>
+            <li>Ako takvog roditelja nema, pozicionira se relativno prema <code>&lt;body&gt;</code> elementu.</li>
+        </ul>
+
+        <h3>Fixed (fiksno)</h3>
+        <ul>
+            <li>Element se pozicionira u odnosu na prozor preglednika (viewport).</li>
+            <li>Ne pomiče se kad skrolaš stranicu.</li>
+        </ul>
+
+        <h3>Sticky (ljepljivo)</h3>
+        <ul>
+            <li>Dok je element unutar svog roditelja, ponaša se kao <b>relative</b>.</li>
+            <li>Kad dosegne granicu (npr. <span class="span2">top: 0</span>), „zalijepi se“ i ponaša se kao <b>fixed</b>.</li>
+        </ul>
+
+        <h3>Top, Right, Bottom, Left</h3>
+        <ul class="objasnjenje" style="list-style-type: none;">
+            <li>- Ova svojstva definiraju pomak elementa od odgovarajućih rubova.</li>
+            <li>- Djeluju samo kad je <span class="span2">position</span> postavljen na vrijednost različitu od <span class="span3">static</span>.</li>
+        </ul>
+
+        <h3>Z‑index</h3>
+        <ul>
+            <li>Određuje slojevitost elemenata (što je ispred, što je iza).</li>
+            <li>Radi samo na elementima koji imaju poziciju različitu od <span class="span3">static</span>.</li>
+            <li>Veći <span class="span2">z-index</span> znači element je postavljen ispred ostalih.</li>
+        </ul>
+
+        <h2>Primjer CSS koda:</h2>
+        <pre><code>div.relative {
+  position: relative;
+  left: 30px;
+}
+
+div.absolute {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+div.sticky {
+  position: sticky;
+  top: 0;
+}</code></pre>
+
+        <footer class="tags">
+            <span class="tag">CSS</span>
+            <span class="tag">Pozicioniranje</span>
+            <span class="tag">Layout</span>
+        </footer>
+    </div>
+</div>
