@@ -557,6 +557,7 @@ div.right {
         <li><a href="#Zaobljeni kutovi">zaobljeni kutovi</a></li>
         <li><a href="#Flexbox">flexbox</a></li>
         <li><a href="#box-sizing">box-sizing</a></li>
+        <li><a href="css jedinice">css jedinice</a></li>
 
     </div>
 </div>
@@ -583,8 +584,40 @@ div.right {
              <p>Donji dio osigurava da su svi elementi dimenzionirani na ovaj intuitivniji način. Mnogi preglednici već koriste box-sizing: border-box; za mnoge elemente obrasca (ali ne za sve- zbog čega unosi i tekstualna područja izgledaju drugačije pri širini: 100%)</p>
              <img src="sizingkod3.png" alt="sizingkod3">
         </div>
-    </div>
-
+    </div> 
+ <!-- Kartica 10. lekcije -->
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2 style="margin-top: 40px;">🎯 CSS JEDINICE</h2>
+                <p>Lekcija 10 • 15. studenog 2025. </p>
+            </div>
+             <p>CSS ima nekoliko različitih jedinica za izražavanje duljine.</p>
+             <p>Mnoga CSS svojstva uzimaju vrijednosti "duljine", kao što su <span style="color: blue;">width, margin, padding, font-size,</span> itd... </p>
+             <p>Duljina je broj iza kojeg slijedi jedinica duljine, kao što je <span style="color: red">10px, 2em, itd.</span> 
+             <h2>PRIMJER</h2>
+             <img src="primjer1.png" alt="primjer1">
+             <h3>NAPOMENA</h3>
+             <p>Razmak ne smije se nalaziti između broja i jedinice. Međutim, ako je vrijednost 0, jedinica se može izostaviti.</p>
+             <ul>
+                <li>Za neka CSS svojstva dopuštene su negativne duljine.</li>
+                <li>Postoje dvije vrste jedinica za duljinu: apsolutne i relativne .</li>
+             </ul>
+             <h4>APSOLUTNE DULJINE</h4>
+             <p>Apsolutne jedinice duljine su fiksne i duljina izražena u bilo kojoj od njih prikazat će se točno kao ta veličina.</p>
+             <p>Apsolutne jedinice duljine ne preporučuju se za korištenje na zaslonu jer se veličine zaslona jako razlikuju.
+             Međutim, mogu se koristiti ako je poznat izlazni medij, kao što je za raspored ispisa.</p>
+             <img src="primjer2.png" alt="primjer2">
+             <p>* Pikseli (px) su relativni u odnosu na uređaj za gledanje. Za uređaje s niskom dpi rezolucijom,
+             1px je jedan piksel (točka) uređaja na zaslonu.
+             Za pisače i zaslone visoke rezolucije, 1px podrazumijeva više piksela uređaja.</p>
+             <h5>RELATIVNE DULJINE</h5>
+             <p>Relativne jedinice duljine određuju duljinu u odnosu na drugo svojstvo duljine. 
+              Relativne jedinice duljine bolje se skaliraju između različitih medija za renderiranje.</p>
+             <img src="primjer3.png" alt="primjer3">
+             <img src="primjer4.png" alt="primjer4">
+        </div>
+       </div>
 </body>
 </html>
  
