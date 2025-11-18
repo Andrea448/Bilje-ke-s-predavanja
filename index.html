@@ -618,6 +618,39 @@ div.right {
              <img src="primjer4.png" alt="primjer4">
         </div>
        </div>
+    <!-- Kartica 12. lekcije -->
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2 id="css-grid">🎯 OSNOVNI KONCEPTI  RASPOREDA GRIDA</h2>
+                <p>Lekcija 12 • 17. studenog 2025. </p>
+            </div>
+             <h2>Što je mreža?</h2>
+             <p>Mreža je skup horizontalnih i vertikalnih linija koje se sijeku i definiraju retke i stupce. Elementi se mogu postaviti na mrežu unutar tih linija stupaca i redaka.</p>
+             <p>Duljina je broj iza kojeg slijedi jedinica duljine kao što je 10px, 2em,itd.</p>
+             <h2>Spremnik mreže</h2>
+             <P>Kontejner mreže stvaramo deklariranjem display: grid`or` display: inline-gridna elementu. Čim to učinimo, sva izravna djeca tog elementa postaju elementi mreže .
+             U ovom primjeru imamo sadržavajući div s klasom wrapper. Unutar njega ugniježđeno je pet podređenih elemenata.</P>
+             <p>Apsolutne jedinice duljine ne preporučuju se za korištenje na zaslonu jer se veličine zaslona jako razlikuju. Međutim, mogu se koristiti ako je poznat izlazni medij, kao što je za raspored ispisa.</p>
+             <img src="gridkod1.png" alt="gridkod1">
+             <p>Izrađujemo .wrappermrežni kontejner koristeći display: grid;.</p>
+             <img src="gridkod11.png" alt="gridkod11">
+             <img src="grid1.png" alt="grid1" width="600px">
+             <h2>JEDINICA fr</h2>
+             <p>Jedinica frpredstavlja dio dostupnog prostora u spremniku mreže. Sljedeća definicija mreže stvorila bi tri traga jednake širine koji rastu i smanjuju se ovisno o dostupnom prostoru.</p>
+            <img src="gridkod2.png" alt="gridkod2">
+            <p>primjer koda u CSS-u</p>
+            <img src="gridkod22.png" alt="gridkod22">
+            <img src="grid2.png" alt="grid2" width="600px">
+            <h2>POZICIONIRANJE STAVKI UZ LINIJE</h2>
+            <p>U ovom primjeru, prve dvije stavke na našoj mreži s tri stupca postavljene su pomoću svojstava , i grid-column-start. grid-column-endIdući s lijeva na desno, prva stavka postavlja se uz prvi redak stupca i proteže se do četvrtog retka stupca, što je u našem slučaju krajnja desna linija na mreži. Počinje u prvom retku i završava u trećem retku, dakle proteže se preko dva retka traga.grid-row-startgrid-row-end</p>
+            <img src="gridkod3.png" alt="gridkod3">
+            <p>primjer koda u CSS-u</p>
+            <img src="gridkod33.png" alt="gridkod33">
+
+        </div>
+    </div>
+    
 </body>
 </html>
  
